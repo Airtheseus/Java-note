@@ -70,17 +70,19 @@ map有点不同：
 延迟加载，把作用于为单例的对象先创建
 
 ## 依赖注入的相关注解
-@Autowried和@Qualifier
-该注解支持set方法注入和构造器方法注入
+
+@Autowried和@Qualifier  
+该注解支持set方法注入和构造器方法注入  
 当采用set方式注入时，可以将@Autowried添加到set方法掐年，如果不使用@Qualifier,则
 容器会使用byType的方式来注入，有可能出错，建议使用@Qualifier,明确指出要注入的bean
-的id
-@Resource
-只支持set方式注入
-可以将注解添加到属性前，使用name属性指定要注入的bean id，如果不指定默认按照byType
-方式注入
+的id  
 
-@Value
-可以使用该注解来注入基本类型的值
-可以使用该注解使用Spring表达式
-该注解可以添加到属性前，或者添加到对应的set方法前
+@Resource  
+只支持set方式注入  
+可以将注解添加到属性前，使用name属性指定要注入的bean id，如果不指定默认按照byType
+方式注入  
+
+@Value  
+可以使用该注解来注入基本类型的值  
+可以使用该注解使用Spring表达式  
+该注解可以添加到属性前，或者添加到对应的set方法前  
